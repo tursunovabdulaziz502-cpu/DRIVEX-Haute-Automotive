@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRIVEX — Haute Automotive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="img/Gemini_Generated_Image_hsclqphsclqphscl.jpg" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-brand">
+            <a href="#" class="logo">DRIVEX</a>
+            <span class="sub-logo">HAUTE AUTOMOTIVE</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#hero" class="active">HOME</a>
+            <a href="#featured">FEATURED CARS</a>
+            <a href="#inventory">CURATED INVENTORY</a>
+            <a href="#marques">MARQUES</a>
+            <a href="#about">ABOUT DRIVEX</a>
+            <a href="#contact">VIP CONCIERGE</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="icon-btn" onclick="showAlert('Qidiruv tizimi faollashtirildi. Pastdagi Inventory bo‘limidan foydalanishingiz mumkin.')">
+                <i class="ri-search-line"></i>
+            </button>
+            <div class="currency-box" onclick="showAlert('Valyuta va hudud: USD $ / Global Vault tanlangan.')">
+                <i class="ri-global-line"></i>
+                <span>USD $ / GLOBAL VAULT</span>
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <a href="#contact" class="btn-gold">PRIVATE INQUIRY</a>
+            <button class="user-btn" onclick="showAlert('VIP Mijoz kabineti: Biometrik kirish talab qilinadi.')">
+                <i class="ri-user-line"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="hero" class="hero hero-bg-image">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content reveal">
+            <div class="badge-tag">
+                <span class="dot"></span> COLLECTION 2025 // MONACO • DUBAI • LONDON • ZÜRICH
+            </div>
+            <h1 class="hero-title">
+                DRIVE YOUR <br>
+                <span class="text-gold">AMBITION</span>
+            </h1>
+            <p class="hero-desc">
+                Curators of the world's most distinguished hypercars, homologation specials, and bespoke sovereign commissions. Engineered exclusively for the uncompromising few.
+            </p>
+            <div class="hero-btns">
+                <a href="#inventory" class="btn-gold">EXPLORE COLLECTION <i class="ri-arrow-right-line"></i></a>
+                <a href="#contact" class="btn-dark"><i class="ri-lock-line"></i> REQUEST PRIVATE VIEWING</a>
+            </div>
+        </div>
+
+        <div class="hero-stats-bar">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <span class="stat-label">GLOBAL FULFILLMENTS</span>
+                    <div class="stat-val">38 Chassis <small>Delivered Q1 2025</small></div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">TRANSACTION MEAN</span>
+                    <div class="stat-val">$780,000 USD <small class="text-gold">+14.2% YoY</small></div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">BONDED ESCROW DEPOT</span>
+                    <div class="stat-val">Zürich • Linate <small>Linz Free Zone</small></div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">ALLOCATED VAULT</span>
+                    <div class="stat-val">24 Active <small>Available Instantly</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="section container">
+        <div class="section-header-flex reveal">
+            <div>
+                <span class="gold-subtitle">CURATED MASTERPIECES</span>
+                <h2 class="section-title">FEATURED ACQUISITIONS</h2>
+            </div>
+            <p class="header-right-text">
+                Four distinct expressions of extreme track engineering, homologated aerodynamic mastery, and ultra-high tier coachwork.
+            </p>
+        </div>
+
+        <div class="featured-grid">
+            <div class="feat-card reveal">
+                <div class="feat-img-box">
+                    <span class="card-badge">AVAILABLE TODAY</span>
+                    <img src="img/section2-img.jpg" alt="Ferrari 296 GTB" class="car-img featured-car-img">
+                </div>
+                <div class="feat-body">
+                    <div class="meta-row">
+                        <span>2024 • MARANELLO</span>
+                        <span class="text-gold">CHASSIS #8821</span>
+                    </div>
+                    <h3 class="car-name">FERRARI 296 GTB</h3>
+                    <p class="car-sub">Assetto Fiorano Pack / Rosso Corsa</p>
+                    
+                    <div class="specs-box">
+                        <div><span>OUTPUT</span><strong>819 HP</strong></div>
+                        <div><span>0-60 MPH</span><strong class="text-gold">2.9 s</strong></div>
+                        <div><span>V-MAX</span><strong>205 MPH</strong></div>
+                    </div>
+
+                    <div class="card-footer">
+                        <div>
+                            <span class="price-label">ACQUISITION</span>
+                            <div class="price-val">$428,000</div>
+                        </div>
+                        <button class="btn-gold-sm" onclick="inquireCar('Ferrari 296 GTB ($428,000)')">INQUIRE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feat-card reveal">
+                <div class="feat-img-box">
+                    <span class="card-badge">ALLOCATION SLOT</span>
+                    <img src="img/section2-img1.jpg" alt="Lamborghini Revuelto" class="car-img featured-car-img">
+                </div>
+                <div class="feat-body">
+                    <div class="meta-row">
+                        <span>2024 • SANT'AGATA</span>
+                        <span class="text-gold">CHASSIS #0104</span>
+                    </div>
+                    <h3 class="car-name">LAMBORGHINI REVUELTO</h3>
+                    <p class="car-sub">V12 HPEV Hybrid / Verde Turbine</p>
+                    
+                    <div class="specs-box">
+                        <div><span>OUTPUT</span><strong>1,001 HP</strong></div>
+                        <div><span>0-60 MPH</span><strong class="text-gold">2.5 s</strong></div>
+                        <div><span>V-MAX</span><strong>217 MPH</strong></div>
+                    </div>
+
+                    <div class="card-footer">
+                        <div>
+                            <span class="price-label">ACQUISITION</span>
+                            <div class="price-val">$608,000</div>
+                        </div>
+                        <button class="btn-gold-sm" onclick="inquireCar('Lamborghini Revuelto ($608,000)')">INQUIRE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feat-card reveal">
+                <div class="feat-img-box">
+                    <span class="card-badge">TRACK HOMOLOGATED</span>
+                    <img src="img/section2-img2.jpg" alt="AMG GT Black Series" class="car-img featured-car-img">
+                </div>
+                <div class="feat-body">
+                    <div class="meta-row">
+                        <span>2023 • AFFALTERBACH</span>
+                        <span class="text-gold">CHASSIS #7719</span>
+                    </div>
+                    <h3 class="car-name">AMG GT BLACK SERIES</h3>
+                    <p class="car-sub">Flat-Plane Crank / Magno Graphite</p>
+                    
+                    <div class="specs-box">
+                        <div><span>OUTPUT</span><strong>720 HP</strong></div>
+                        <div><span>0-60 MPH</span><strong class="text-gold">3.1 s</strong></div>
+                        <div><span>V-MAX</span><strong>202 MPH</strong></div>
+                    </div>
+
+                    <div class="card-footer">
+                        <div>
+                            <span class="price-label">ACQUISITION</span>
+                            <div class="price-val">$385,000</div>
+                        </div>
+                        <button class="btn-gold-sm" onclick="inquireCar('AMG GT Black Series ($385,000)')">INQUIRE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feat-card reveal">
+                <div class="feat-img-box">
+                    <span class="card-badge">WEISSACH SPEC</span>
+                    <img src="img/section2-img3.jpg" alt="Porsche 911 GT3 RS" class="car-img featured-car-img">
+                </div>
+                <div class="feat-body">
+                    <div class="meta-row">
+                        <span>2024 • STUTTGART</span>
+                        <span class="text-gold">CHASSIS #4492</span>
+                    </div>
+                    <h3 class="car-name">PORSCHE 911 GT3 RS</h3>
+                    <p class="car-sub">Weissach Package / Stealth Black</p>
+                    
+                    <div class="specs-box">
+                        <div><span>OUTPUT</span><strong>518 HP</strong></div>
+                        <div><span>0-60 MPH</span><strong class="text-gold">3.0 s</strong></div>
+                        <div><span>V-MAX</span><strong>184 MPH</strong></div>
+                    </div>
+
+                    <div class="card-footer">
+                        <div>
+                            <span class="price-label">ACQUISITION</span>
+                            <div class="price-val">$395,000</div>
+                        </div>
+                        <button class="btn-gold-sm" onclick="inquireCar('Porsche 911 GT3 RS ($395,000)')">INQUIRE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="inventory" class="section container">
+        <div class="reveal">
+            <span class="gold-subtitle">PRIVATE SHOWROOM</span>
+            <h2 class="section-title">CURATED VAULT INVENTORY</h2>
+        </div>
+
+        <div class="filter-controls reveal">
+            <div class="search-bar-row">
+                <div class="search-input-wrap">
+                    <i class="ri-search-line"></i>
+                    <input type="text" id="searchInput" placeholder="Search by marque, model, chassis, or year...">
+                </div>
+                <select id="priceFilter" class="filter-select">
+                    <option value="all">Budget: All Tiers</option>
+                    <option value="low">Under $250,000</option>
+                    <option value="mid">$250,000 – $450,000</option>
+                    <option value="high">$450,000+</option>
+                </select>
+                <select id="sortFilter" class="filter-select">
+                    <option value="default">Sort: Latest Drops</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                </select>
+            </div>
+
+            <div class="brand-tabs" id="brandTabs">
+                <button class="tab-btn active" data-brand="all">ALL (9)</button>
+                <button class="tab-btn" data-brand="ferrari">FERRARI</button>
+                <button class="tab-btn" data-brand="porsche">PORSCHE</button>
+                <button class="tab-btn" data-brand="lamborghini">LAMBORGHINI</button>
+                <button class="tab-btn" data-brand="mercedes">MERCEDES-AMG</button>
+                <button class="tab-btn" data-brand="bmw">BMW M</button>
+                <button class="tab-btn" data-brand="audi">AUDI SPORT</button>
+                <button class="tab-btn" data-brand="rangerover">RANGE ROVER</button>
+                <button class="tab-btn" data-brand="aston">ASTON MARTIN</button>
+            </div>
+        </div>
+
+        <div class="inventory-grid" id="inventoryGrid">
+            <div class="inv-card reveal" data-brand="ferrari" data-price="428000" data-name="ferrari 296 gtb v6 hybrid 8821">
+                <div class="inv-img-box">
+                    <span class="card-badge-gold">READY FOR DELIVERY</span>
+                    <img src="img/section2-img4.jpg" alt="296 GTB V6 Hybrid" class="car-img inv-car-img">
+                </div>
+                <div class="inv-body">
+                    <div class="inv-top-row">
+                        <span class="inv-brand">FERRARI</span>
+                        <span class="inv-price">$428,000</span>
+                    </div>
+                    <h3 class="inv-title">296 GTB V6 HYBRID</h3>
+                    <div class="inv-specs">
+                        <span>819 HP</span> • <span>2.9s 0-60</span> • <span>Rosso Corsa</span>
+                    </div>
+                    <div class="inv-bottom-row">
+                        <span class="chassis">CHASSIS #8821</span>
+                        <button class="dossier-link" onclick="showAlert('CHASSIS #8821 (Ferrari 296 GTB) to‘liq texnik hujjatlari va ekspertiza xulosasi tayyor.')">VIEW DOSSIER <i class="ri-arrow-right-line"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inv-card reveal" data-brand="lamborghini" data-price="608000" data-name="lamborghini revuelto v12 hpev 0104">
+                <div class="inv-img-box">
+                    <span class="card-badge-gold">ALLOCATION AVAILABLE</span>
+                    <img src="img/section2-img5.jpg" alt="Revuelto V12 HPEV" class="car-img inv-car-img">
+                </div>
+                <div class="inv-body">
+                    <div class="inv-top-row">
+                        <span class="inv-brand">LAMBORGHINI</span>
+                        <span class="inv-price">$608,000</span>
+                    </div>
+                    <h3 class="inv-title">REVUELTO V12 HPEV</h3>
+                    <div class="inv-specs">
+                        <span>1,001 HP</span> • <span>2.5s 0-60</span> • <span>Verde Turbine</span>
+                    </div>
+                    <div class="inv-bottom-row">
+                        <span class="chassis">CHASSIS #0104</span>
+                        <button class="dossier-link" onclick="showAlert('CHASSIS #0104 (Lamborghini Revuelto) zavod kvotasi va texnik pasporti ochildi.')">VIEW DOSSIER <i class="ri-arrow-right-line"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inv-card reveal" data-brand="mercedes" data-price="385000" data-name="mercedes amg gt black series 7719">
+                <div class="inv-img-box">
+                    <span class="card-badge-gold">TRACK HOMOLOGATED</span>
+                    <img src="img/section2-img6.jpg" alt="GT Black Series" class="car-img inv-car-img">
+                </div>
+                <div class="inv-body">
+                    <div class="inv-top-row">
+                        <span class="inv-brand">MERCEDES-AMG</span>
+                        <span class="inv-price">$385,000</span>
+                    </div>
+                    <h3 class="inv-title">GT BLACK SERIES</h3>
+                    <div class="inv-specs">
+                        <span>720 HP</span> • <span>3.1s 0-60</span> • <span>Magno Graphite</span>
+                    </div>
+                    <div class="inv-bottom-row">
+                        <span class="chassis">CHASSIS #7719</span>
+                        <button class="dossier-link" onclick="showAlert('CHASSIS #7719 (AMG GT Black Series) trek telemetriyasi va hujjatlari yuklandi.')">VIEW DOSSIER <i class="ri-arrow-right-line"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inv-card reveal" data-brand="porsche" data-price="395000" data-name="porsche 911 gt3 rs 992 4492">
+                <div class="inv-img-box">
+                    <span class="card-badge-gold">WEISSACH SPEC</span>
+                    <img src="img/section2-img7.jpg" alt="911 GT3 RS" class="car-img inv-car-img">
+                </div>
+                <div class="inv-body">
+                    <div class="inv-top-row">
+                        <span class="inv-brand">PORSCHE</span>
+                        <span class="inv-price">$395,000</span>
+                    </div>
+                    <h3 class="inv-title">911 GT3 RS (992)</h3>
+                    <div class="inv-specs">
+                        <span>518 HP</span> • <span>3.0s 0-60</span> • <span>Stealth Black</span>
+                    </div>
+                    <div class="inv-bottom-row">
+                        <span class="chassis">CHASSIS #4492</span>
+                        <button class="dossier-link" onclick="showAlert('CHASSIS #4492 (Porsche 911 GT3 RS) Weissach paketi hujjatlari tayyor.')">VIEW DOSSIER <i class="ri-arrow-right-line"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inv-card reveal" data-brand="bmw" data-price="154000" data-name="bmw m8 competition gc 8810">
+                <div class="inv-img-box">
+                    <span class="card-badge-gold">EXECUTIVE SPEC</span>
+                    <img src="img/section2-img8.jpg" alt="M8 Competition GC" class="car-img inv-car-img">
+                </div>
+                <div class="inv-body">
+                    <div class="inv-top-row">
+                        <span class="inv-brand">BMW M</span>
+                        <span class="inv-price">$154,000</span>
+                    </div>
+                    <h3 class="inv-title">M8 COMPETITION GC</h3>
+                    <div class="inv-specs">
+                        <span>617 HP</span> • <span>3.0s 0-60</span> • <span>Marina Bay Blue</span>
+                    </div>
+                    <div class="inv-bottom-row">
+                        <span class="chassis">CHASSIS #8810</span>
+                        <button class="dossier-link" onclick="showAlert('CHASSIS #8810 (BMW M8 Competition) to‘liq tarixi ko‘rsatilmoqda.')">VIEW DOSSIER <i class="ri-arrow-right-line"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inv-card reveal" data-brand="audi" data-price="165000" data-name="audi sport rs e-tron gt carbon 9021">
+                <div class="inv-img-box">
+                    <span class="card-badge-gold">ELECTRIC GRAND TOURER</span>
+                    <img src="img/section2-img9.jpg" alt="RS E-Tron GT Carbon" class="car-img inv-car-img">
+                </div>
+                <div class="inv-body">
+                    <div class="inv-top-row">
+                        <span class="inv-brand">AUDI SPORT</span>
+                        <span class="inv-price">$165,000</span>
+                    </div>
+                    <h3 class="inv-title">RS E-TRON GT CARBON</h3>
+                    <div class="inv-specs">
+                        <span>637 HP</span> • <span>3.1s 0-60</span> • <span>Mythos Black</span>
+                    </div>
+                    <div class="inv-bottom-row">
+                        <span class="chassis">CHASSIS #9021</span>
+                        <button class="dossier-link" onclick="showAlert('CHASSIS #9021 (Audi RS e-tron GT) batareya va kafolat hujjatlari tayyor.')">VIEW DOSSIER <i class="ri-arrow-right-line"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inv-card reveal" data-brand="rangerover" data-price="245000" data-name="range rover sv obsidian edition 3319">
+                <div class="inv-img-box">
+                    <span class="card-badge-gold">BESPOKE ATELIER</span>
+                    <img src="img/section2-img10.jpg" alt="SV Obsidian Edition" class="car-img inv-car-img">
+                </div>
+                <div class="inv-body">
+                    <div class="inv-top-row">
+                        <span class="inv-brand">RANGE ROVER SV</span>
+                        <span class="inv-price">$245,000</span>
+                    </div>
+                    <h3 class="inv-title">SV OBSIDIAN EDITION</h3>
+                    <div class="inv-specs">
+                        <span>606 HP</span> • <span>Twin Turbo V8</span> • <span>Santorini Black</span>
+                    </div>
+                    <div class="inv-bottom-row">
+                        <span class="chassis">CHASSIS #3319</span>
+                        <button class="dossier-link" onclick="showAlert('CHASSIS #3319 (Range Rover SV) maxsus zirh va salon sertifikati ochildi.')">VIEW DOSSIER <i class="ri-arrow-right-line"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inv-card reveal" data-brand="porsche" data-price="218000" data-name="porsche taycan turbo s ct 6118">
+                <div class="inv-img-box">
+                    <span class="card-badge-gold">SUPER EV WAGON</span>
+                    <img src="img/section2-img11.jpg" alt="Taycan Turbo S CT" class="car-img inv-car-img">
+                </div>
+                <div class="inv-body">
+                    <div class="inv-top-row">
+                        <span class="inv-brand">PORSCHE</span>
+                        <span class="inv-price">$218,000</span>
+                    </div>
+                    <h3 class="inv-title">TAYCAN TURBO S CT</h3>
+                    <div class="inv-specs">
+                        <span>938 HP</span> • <span>2.3s 0-60</span> • <span>Volcano Grey</span>
+                    </div>
+                    <div class="inv-bottom-row">
+                        <span class="chassis">CHASSIS #6118</span>
+                        <button class="dossier-link" onclick="showAlert('CHASSIS #6118 (Porsche Taycan Turbo S) texnik hujjatlari tayyor.')">VIEW DOSSIER <i class="ri-arrow-right-line"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inv-card reveal" data-brand="aston" data-price="415000" data-name="aston martin dbs 770 ultimate 0554">
+                <div class="inv-img-box">
+                    <span class="card-badge-gold">1 OF 499 WORLDWIDE</span>
+                    <img src="img/section2-img12.jpg" alt="DBS 770 Ultimate" class="car-img inv-car-img">
+                </div>
+                <div class="inv-body">
+                    <div class="inv-top-row">
+                        <span class="inv-brand">ASTON MARTIN</span>
+                        <span class="inv-price">$415,000</span>
+                    </div>
+                    <h3 class="inv-title">DBS 770 ULTIMATE</h3>
+                    <div class="inv-specs">
+                        <span>759 HP</span> • <span>Twin Turbo V12</span> • <span>Xenon Grey</span>
+                    </div>
+                    <div class="inv-bottom-row">
+                        <span class="chassis">CHASSIS #0554</span>
+                        <button class="dossier-link" onclick="showAlert('CHASSIS #0554 (Aston Martin DBS 770 Ultimate) kolleksiya sertifikati tayyor.')">VIEW DOSSIER <i class="ri-arrow-right-line"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="emptyState" class="empty-state" style="display: none;">
+            <p>Tanlangan filter bo'yicha avtomobil topilmadi.</p>
+            <button class="btn-gold-sm" onclick="resetFilters()">BARCHASINI KO'RSATISH</button>
+        </div>
+
+        <div class="offmarket-banner reveal">
+            <div class="offmarket-left">
+                <div class="lock-icon"><i class="ri-folder-lock-line"></i></div>
+                <div>
+                    <h4>ACCESS COMPLETE OFF-MARKET VAULT</h4>
+                    <p>18 additional sovereign allocations and historic homologations protected by strict non-disclosure agreement.</p>
+                </div>
+            </div>
+            <button class="btn-dark" onclick="showAlert('Yopiq Vault kaliti (Passkey) uchun so‘rov yuborildi. Menejer 15 daqiqada bog‘lanadi.')">REQUEST VAULT PASSKEY</button>
+        </div>
+    </section>
+
+    <section id="marques" class="section container">
+        <div class="center-header reveal">
+            <span class="gold-subtitle">OFFICIAL ALLIANCES</span>
+            <h2 class="section-title">PARTNER MARQUES & <br> HERITAGE HOUSES</h2>
+        </div>
+
+        <div class="marques-grid">
+            <div class="marque-card reveal" onclick="filterByMarque('porsche')">
+                <div class="marque-top">
+                    <i class="ri-roadster-line"></i>
+                    <span class="stock-tag">8 in stock</span>
+                </div>
+                <h4>PORSCHE</h4>
+                <span>STUTTGART, DE</span>
+            </div>
+
+            <div class="marque-card reveal" onclick="filterByMarque('ferrari')">
+                <div class="marque-top">
+                    <i class="ri-sparkling-line"></i>
+                    <span class="stock-tag">5 in stock</span>
+                </div>
+                <h4>FERRARI</h4>
+                <span>MARANELLO, IT</span>
+            </div>
+
+            <div class="marque-card reveal" onclick="filterByMarque('lamborghini')">
+                <div class="marque-top">
+                    <i class="ri-speed-up-line"></i>
+                    <span class="stock-tag">4 in stock</span>
+                </div>
+                <h4>LAMBORGHINI</h4>
+                <span>SANT'AGATA, IT</span>
+            </div>
+
+            <div class="marque-card reveal" onclick="filterByMarque('mercedes')">
+                <div class="marque-top">
+                    <i class="ri-steering-2-line"></i>
+                    <span class="stock-tag">6 in stock</span>
+                </div>
+                <h4>MERCEDES-AMG</h4>
+                <span>AFFALTERBACH, DE</span>
+            </div>
+
+            <div class="marque-card reveal" onclick="filterByMarque('all')">
+                <div class="marque-top">
+                    <i class="ri-flag-line"></i>
+                    <span class="stock-tag">3 in stock</span>
+                </div>
+                <h4>MCLAREN</h4>
+                <span>WOKING, UK</span>
+            </div>
+
+            <div class="marque-card reveal" onclick="filterByMarque('all')">
+                <div class="marque-top">
+                    <i class="ri-shield-star-line"></i>
+                    <span class="stock-tag">2 in stock</span>
+                </div>
+                <h4>ROLLS-ROYCE</h4>
+                <span>GOODWOOD, UK</span>
+            </div>
+
+            <div class="marque-card reveal" onclick="filterByMarque('aston')">
+                <div class="marque-top">
+                    <i class="ri-medal-line"></i>
+                    <span class="stock-tag">3 in stock</span>
+                </div>
+                <h4>ASTON MARTIN</h4>
+                <span>GAYDON, UK</span>
+            </div>
+
+            <div class="marque-card reveal" onclick="filterByMarque('all')">
+                <div class="marque-top">
+                    <i class="ri-award-line"></i>
+                    <span class="stock-tag">1 Allocation</span>
+                </div>
+                <h4>BUGATTI</h4>
+                <span>MOLSHEIM, FR</span>
+            </div>
+
+            <div class="marque-card reveal" onclick="filterByMarque('all')">
+                <div class="marque-top">
+                    <i class="ri-vip-diamond-line"></i>
+                    <span class="stock-tag">2 in stock</span>
+                </div>
+                <h4>BENTLEY</h4>
+                <span>CREWE, UK</span>
+            </div>
+
+            <div class="marque-card reveal" onclick="filterByMarque('bmw')">
+                <div class="marque-top">
+                    <i class="ri-flashlight-line"></i>
+                    <span class="stock-tag">6 in stock</span>
+                </div>
+                <h4>BMW M</h4>
+                <span>MUNICH, DE</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section container">
+        <div class="about-grid">
+            <div class="about-visual reveal">
+                <div class="about-img-wrap">
+                    <img src="img/section2-img13.jpg" alt="DRIVEX Milano Hangar" class="about-main-img">
+                </div>
+                <div class="about-caption-bar">
+                    <div>
+                        <span>MODEL</span>
+                        <strong>Bugatti Chiron Super Sport (Blue Carbon)</strong>
+                    </div>
+                    <div>
+                        <span>YEAR</span>
+                        <strong>2024</strong>
+                    </div>
+                </div>
+                <div class="hangar-floating-card">
+                    <span class="text-gold">HANGAR PRIMO // MILANO</span>
+                    <p>Private runway proximity, custom dehumidified vault bays, biometric patron access.</p>
+                </div>
+            </div>
+
+            <div class="about-content reveal">
+                <span class="gold-subtitle">ABOUT DRIVEX</span>
+                <h2 class="section-title">REDEFINING HIGH-END AUTOMOTIVE ACQUISITION</h2>
+                <p class="about-text">
+                    DRIVEX operates beyond the boundaries of conventional dealerships. Founded as a private multi-family automotive office, we provide discerning connoisseurs privileged access to confidential off-market factory allocations, sovereign collections, and bespoke coachwork commissions.
+                </p>
+                <p class="about-text">
+                    With bonded hangars spanning Milan, Zürich, and London, every acquisition is safeguarded by strict Swiss banking escrow protocols, forensic provenance audits, and temperature-controlled enclosed transit to any private aerodrome globally.
+                </p>
+
+                <div class="about-metrics">
+                    <div class="metric-box">
+                        <h3 class="text-gold">15+</h3>
+                        <strong>YEARS OF EXCELLENCE</strong>
+                        <span>Continuous sovereign tenure</span>
+                    </div>
+                    <div class="metric-box">
+                        <h3>1,200+</h3>
+                        <strong>SUPERCARS PLACED</strong>
+                        <span>Worldwide verified deliveries</span>
+                    </div>
+                    <div class="metric-box">
+                        <h3>$450M+</h3>
+                        <strong>TRANSACTED VOLUME</strong>
+                        <span>Escrow-backed settlement</span>
+                    </div>
+                    <div class="metric-box">
+                        <h3 class="text-gold">99.4%</h3>
+                        <strong>CLIENT SATISFACTION</strong>
+                        <span>Multi-vehicle family offices</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section container">
+        <div class="contact-grid">
+            <div class="brief-form-card reveal">
+                <span class="gold-subtitle">DISCRETE ENGAGEMENT</span>
+                <h2 class="section-title">TRANSMIT ACQUISITION BRIEF</h2>
+                <p class="form-desc">Our Senior Acquisition Directors handle all requests with supreme Swiss confidentiality. Expect initial verification within two hours.</p>
+
+                <form id="briefForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>FULL LEGAL NAME</label>
+                            <input type="text" id="clientName" placeholder="e.g. Maximilian Von Berg" required>
+                        </div>
+                        <div class="form-group">
+                            <label>CONFIDENTIAL EMAIL / SIGNAL HANDLE</label>
+                            <input type="email" id="clientEmail" placeholder="director@familyoffice.ch" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>MARQUE OF INTEREST</label>
+                            <select id="clientMarque">
+                                <option>Ferrari Classiche & Modern</option>
+                                <option>Lamborghini V12 & Allocations</option>
+                                <option>Porsche GT & Sonderwunsch</option>
+                                <option>Bugatti / Koenigsegg Hypercars</option>
+                                <option>Mercedes-AMG Black Series</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>CAPITAL ALLOCATION SCOPE</label>
+                            <select id="clientBudget">
+                                <option>$250,000 – $500,000 USD</option>
+                                <option>$500,000 – $1,000,000 USD</option>
+                                <option>$1,000,000 – $3,000,000 USD</option>
+                                <option>$3,000,000+ Sovereign Tier</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>CHASSIS SPECIFICS & HANGAR REQUIREMENT</label>
+                        <textarea id="clientNotes" rows="4" placeholder="Detail colorway preference, track telemetry desires, or private hangar delivery coordinates..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-gold">TRANSMIT ACQUISITION BRIEF</button>
+                    <div class="encrypted-note">
+                        <i class="ri-shield-check-line text-gold"></i> 256-BIT ENCRYPTED CLIENT TERMINAL
+                    </div>
+                </form>
+            </div>
+
+            <div class="locations-col reveal">
+                <span class="gold-subtitle">PHYSICAL PRESENCES</span>
+                <h2 class="section-title">GLOBAL ATELIERS & HANGARS</h2>
+
+                <div class="location-card">
+                    <div class="loc-top">
+                        <h4>MILANO FLAGSHIP ATELIER</h4>
+                        <span class="text-gold">MAIN VAULT</span>
+                    </div>
+                    <p>Via Monte Napoleone 18, 20121 Milano, Italy</p>
+                    <small>Private Hangar: Milan Linate Prime (Bespoke Apron Entry)</small>
+                </div>
+
+                <div class="location-card">
+                    <div class="loc-top">
+                        <h4>ZÜRICH ESCROW VAULT</h4>
+                        <span class="text-gold">BONDED DEPOT</span>
+                    </div>
+                    <p>Bahnhofstrasse 45, 8001 Zürich, Switzerland</p>
+                    <small>Customs Free-Zone: Kloten Aviation Terminal</small>
+                </div>
+
+                <div class="location-card">
+                    <div class="loc-top">
+                        <h4>LONDON MAYFAIR OFFICE</h4>
+                        <span class="text-gold">SOVEREIGN ADVISORY</span>
+                    </div>
+                    <p>Berkeley Square House, Mayfair, London W1J 6BD</p>
+                    <small>Aviation Link: Farnborough Airport (TAG Hangar)</small>
+                </div>
+
+                <div class="hotline-card">
+                    <div>
+                        <span>PRIORITY PATRON DIRECT HOTLINE</span>
+                        <strong class="text-gold">+41 44 214 8800</strong>
+                    </div>
+                    <button class="btn-dark" onclick="showAlert('Shveysariya VIP liniyasiga ulanmoqda: +41 44 214 8800')">
+                        <i class="ri-phone-line"></i> CONNECT
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="#" class="logo">DRIVEX</a>
+                <span class="sub-logo">HAUTE AUTOMOTIVE</span>
+                <p class="footer-desc">
+                    The pinnacle of private acquisition, bespoke coachbuilding, and sovereign automotive heritage. Curator of the world's most exceptional hypercars and classic icons under architectural studio illumination.
+                </p>
+                <div class="terminal-cities">
+                    <span>DIRECT PRIVATE VAULT TERMINAL</span>
+                    <strong>Geneva • London • Dubai • Monterey • Tokyo</strong>
+                </div>
+            </div>
+
+            <div>
+                <h5>CURATED NAVIGATION</h5>
+                <ul>
+                    <li><a href="#inventory">Master Inventory</a></li>
+                    <li><a href="#featured">Exotics & Hypercars</a></li>
+                    <li><a href="#marques">Marque Archives</a></li>
+                    <li><a href="#about">Bespoke Commissions</a></li>
+                    <li><a href="#contact">Acquisition Advisory</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5>MARQUE DIRECTORY</h5>
+                <ul>
+                    <li><a href="#inventory" onclick="filterByMarque('ferrari')">Ferrari Classiche</a></li>
+                    <li><a href="#inventory">Bugatti Atelier</a></li>
+                    <li><a href="#inventory">Pagani Automobili</a></li>
+                    <li><a href="#inventory">Koenigsegg Regalia</a></li>
+                    <li><a href="#inventory" onclick="filterByMarque('porsche')">Porsche Sonderwunsch</a></li>
+                    <li><a href="#inventory" onclick="filterByMarque('aston')">Aston Martin Works</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5>VAULT DISPATCH</h5>
+                <p class="dispatch-text">Receive confidential off-market allocations and atelier release manifests.</p>
+                <form class="dispatch-form" onsubmit="subscribeVault(event)">
+                    <input type="email" id="dispatchEmail" placeholder="ENTER ENCRYPTED EMAIL" required>
+                    <button type="submit"><i class="ri-arrow-right-line"></i></button>
+                </form>
+                <span class="confidential-note">STRICT CONFIDENTIALITY GUARANTEED</span>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© 2025 DRIVEX HAUTE AUTOMOTIVE AG. ALL RIGHTS RESERVED. PROVENANCE VERIFIED VIA GLOBAL REGISTRY.</span>
+            <div class="legal-links">
+                <a href="#contact">PROVENANCE ASSURANCE</a>
+                <a href="#contact">TERMS OF COMMISSION</a>
+                <a href="#contact">PRIVACY PROTOCOL</a>
+                <a href="#contact">ESCROW & LOGISTICS</a>
+            </div>
+        </div>
+    </footer>
+    <div id="customAlertBox" class="custom-alert">
+        <div class="alert-icon"><i class="ri-shield-star-line"></i></div>
+        <div class="alert-content">
+            <span class="alert-title">DRIVEX CONCIERGE</span>
+            <p id="customAlertText"></p>
+        </div>
+        <button class="alert-close" onclick="closeAlert()"><i class="ri-close-line"></i></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
